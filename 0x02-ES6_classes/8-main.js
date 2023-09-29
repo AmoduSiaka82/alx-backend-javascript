@@ -1,3 +1,5 @@
-import getBudgetForCurrentYear from './8-getBudgetCurrentYear.js';
+import HolbertonClass from "./8-hbtn_class.js";
 
-console.log(getBudgetForCurrentYear(2100, 5200, 1090));
+const hc = new HolbertonClass(12, "Mezzanine")
+console.log(Number(hc));
+console.log(String(hc));

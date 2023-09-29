@@ -1,3 +1,5 @@
-import getBudgetObject from './7-getBudgetObject.js';
+import Airport from "./7-airport.js";
 
-console.log(getBudgetObject(400, 700, 900));
+const airportSF = new Airport('San Francisco Airport', 'SFO');
+console.log(airportSF);
+console.log(airportSF.toString());

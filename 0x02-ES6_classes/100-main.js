@@ -1,17 +1,7 @@
-import createIteratorObject from "./100-createIteratorObject.js";
+import EVCar from './100-evcar.js';
 
-import createEmployeesObject from './11-createEmployeesObject.js';
-import createReportObject from './12-createReportObject.js';
+const ec1 = new EVCar("Tesla", "Turbo", "Red", "250");
+console.log(ec1);
 
-const employees = {
-    ...createEmployeesObject('engineering', ['Bob', 'Jane']),
-    ...createEmployeesObject('marketing', ['Sylvie'])
-};
-
-const report = createReportObject(employees);
-
-const reportWithIterator = createIteratorObject(report);
-
-for (const item of reportWithIterator) {
-    console.log(item);
-}
+const ec2 = ec1.cloneCar();
+console.log(ec2);

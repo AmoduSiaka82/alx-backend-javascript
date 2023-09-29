@@ -1,6 +1,9 @@
-import getFullBudgetObject from './9-getFullBudget.js';
+import listOfStudents from "./9-hoisting.js";
 
-const fullBudget = getFullBudgetObject(20, 50, 10);
+console.log(listOfStudents);
 
-console.log(fullBudget.getIncomeInDollars(fullBudget.income));
-console.log(fullBudget.getIncomeInEuros(fullBudget.income));
+const listPrinted = listOfStudents.map(
+    student => student.fullStudentDescription
+);
+
+console.log(listPrinted)
